@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+}
+#box {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+}
+
+h1 {
+  color: red;
+}
+h2 {
+  color: green;
+}
+h3 {
+  color: tomato;
+}
