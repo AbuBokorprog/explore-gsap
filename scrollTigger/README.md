@@ -30,3 +30,23 @@ gsap.from("#page2 #box", {
 - **start**: স্টার্ট যখন স্ক্রলার স্টার্ট কে স্পর্শ করে, তখন scrollerTigger execute হয়।
 - **end**: ইন্ড যখন স্ক্রলার ইন্ড কে স্পর্শ করবে, তখন scrollerTigger এন্ড হয়ে যাবে।
 - **scrub**: যখন স্ক্রল করে নিচের দিকে যাবেন তখন স্ক্রল স্টার্ট হবে আর যখন স্ক্রল করে উপরের দিকে উঠবেন তখন স্ক্রল ইন্ড হবে।
+
+**Example**
+```javascript
+gsap.from("#page2 #box", {
+  scale: 0,
+  duration: 2,
+  delay: 1,
+  backgroundColor: "red",
+  rotate: 360,
+  scrollTrigger: {
+    trigger: "#page2 #box",
+    scroller: "body",
+    markers: true,
+    start: "top 50%",
+    end: "bottom 30%",
+    // scrub: true,
+    scrub: 2,
+  },
+});
+```
